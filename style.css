@@ -32,6 +32,17 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
+#placeholder-text {
+    font-size: 16px;
+    color: #787575; 
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input-box input:focus + #placeholder-text {
+    display: none;
+}
+
 .input-box {
     margin: 20px 0;
     padding: 20px;
@@ -74,9 +85,8 @@
 }
 
 .input-box input::placeholder {
-    color: #b0b0b0;  /* Grey color for placeholder text */
+    color: #b0b0b0;  
 }
-
 
 #result {
     font-size: 18px;
